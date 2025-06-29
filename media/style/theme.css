@@ -11,6 +11,38 @@
     --foreground: black;
 }
 
+.red {
+    color: var(--red);
+}
+
+.yellow {
+    color: var(--yellow);
+}
+
+.green {
+    color: var(--green);
+}
+
+.cyan {
+    color: var(--cyan);
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.violet {
+    color: var(--violet);
+}
+
+.pink {
+    color: var(--pink);
+}
+
+.accent {
+    color: var(--accent);
+}
+
 @media (prefers-contrast: more) {
     :root {
         --red: hsl(10deg, 75%, 40%);

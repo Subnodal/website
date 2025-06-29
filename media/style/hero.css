@@ -6,6 +6,7 @@
 }
 
 .hero h1 {
+    font-size: 2rem;
     text-transform: lowercase;
 }
 
@@ -44,7 +45,17 @@
     right: 15vw;
 }
 
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 1.25rem;
+    }
+}
+
 @media (max-width: 550px) {
+    .hero {
+        padding-block: 10rem;
+    }
+
     .hero .cartoon:nth-child(1) {
         left: 5vw;
     }

@@ -22,6 +22,14 @@ body > * {
     margin-inline: 10%;
 }
 
+section {
+    margin-block: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--mono);
+}
+
 a {
     color: var(--accent);
 }
@@ -30,6 +38,22 @@ a:not(.override):hover, a:not(.override):focus-visible {
     background-color: var(--accent);
     color: var(--background);
     outline: 0.25rem solid var(--accent);
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+}
+
+@media (max-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 1000px) {
@@ -45,7 +69,7 @@ a:not(.override):hover, a:not(.override):focus-visible {
 }
 
 @media (max-width: 600px) {
-    .hero h1 {
-        font-size: 1.25rem;
+    .grid {
+        grid-template-columns: 1fr;
     }
 }
