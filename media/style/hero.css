@@ -1,0 +1,58 @@
+.hero {
+    position: relative;
+    padding-block: 12rem;
+    color: var(--accent);
+    font-family: var(--mono);
+}
+
+.hero h1 {
+    text-transform: lowercase;
+}
+
+.hero pre:nth-child(1) {
+    position: absolute;
+    top: 4rem;
+    left: 10vw;
+}
+
+.hero pre:nth-child(2) {
+    position: absolute;
+    top: 2rem;
+    right: 30vw;
+}
+
+.hero pre:nth-child(3) {
+    position: absolute;
+    top: 1rem;
+    right: 5vw;
+}
+
+.hero pre:nth-child(5) {
+    position: absolute;
+    bottom: 3rem;
+    left: 5vw;
+}
+
+.hero pre:nth-child(6) {
+    position: absolute;
+    bottom: 4rem;
+    right: 15vw;
+}
+
+@media (max-width: 550px) {
+    .hero pre:nth-child(1) {
+        left: 5vw;
+    }
+
+    .hero pre:nth-child(2) {
+        right: 10vw;
+    }
+
+    .hero pre:nth-child(3) {
+        display: none;
+    }
+
+    .hero pre:nth-child(6) {
+        right: 5vw;
+    }
+}

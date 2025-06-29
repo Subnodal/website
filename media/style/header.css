@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    height: 3rem;
+    margin-block: 1rem;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.header a {
+    font-family: var(--mono);
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.header a .wordmark {
+    font-size: 2.5rem;
+    vertical-align: middle;
+}
+
+.header a.active {
+    font-weight: bold;
+}
+
+.header .spacer {
+    flex-grow: 1;
+}
+
+@media (max-width: 800px) {
+    .header a .wordmark {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .header a:not(:first-child) {
+        display: none;
+    }
+}

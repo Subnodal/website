@@ -1,0 +1,51 @@
+@import url("/media/fonts/fonts.css");
+@import url("/media/style/theme.css");
+
+:root {
+    --sans: "Overpass", sans-serif;
+    --mono: "Overpass Mono", monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 20px;
+    font-family: var(--sans);
+    margin: 0;
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+body > * {
+    margin-inline: 10%;
+}
+
+a {
+    color: var(--accent);
+}
+
+a:not(.override):hover, a:not(.override):focus-visible {
+    background-color: var(--accent);
+    color: var(--background);
+    outline: 0.25rem solid var(--accent);
+}
+
+@media (max-width: 1000px) {
+    html, body {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 700px) {
+    body > * {
+        margin-inline: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 1.25rem;
+    }
+}

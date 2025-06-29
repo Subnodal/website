@@ -1,0 +1,24 @@
+:root {
+    --red: hsl(10deg, 75%, 55%);
+    --yellow: hsl(70deg, 75%, 40%);
+    --green: hsl(100deg, 75%, 45%);
+    --cyan: hsl(155deg, 75%, 45%);
+    --blue: hsl(235deg, 75%, 55%);
+    --violet: hsl(285deg, 75%, 55%);
+    --pink: hsl(325deg, 75%, 55%);
+    --accent: var(--blue);
+    --background: white;
+    --foreground: black;
+}
+
+@media (prefers-contrast: more) {
+    :root {
+        --red: hsl(10deg, 75%, 40%);
+        --yellow: hsl(70deg, 75%, 25%);
+        --green: hsl(100deg, 75%, 30%);
+        --cyan: hsl(155deg, 75%, 30%);
+        --blue: hsl(235deg, 75%, 55%);
+        --violet: hsl(285deg, 75%, 55%);
+        --pink: hsl(325deg, 75%, 45%);
+    }
+}

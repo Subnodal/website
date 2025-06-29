@@ -1,0 +1,8 @@
+.wordmark {
+    font-family: var(--mono);
+    color: #404040;
+}
+
+.wordmark.accent {
+    color: var(--accent);
+}
